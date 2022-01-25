@@ -8,7 +8,6 @@
     "cypress/globals": true
   },
   "extends": [
-    "plugin:prettier/recommended",
     "plugin:cypress/recommended"
   ],
   "rules": {
