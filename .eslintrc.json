@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    "cypress",
+    "prettier",
+    "mocha"
+  ],
+  "env": {
+    "cypress/globals": true
+  },
+  "extends": [
+    "plugin:cypress/recommended"
+  ],
+  "rules": {
+    "mocha/no-exclusive-tests": "error",
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error",
+    "cypress/no-pause": "error"
+  }
+}
