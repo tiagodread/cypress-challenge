@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/tiagodread/cypress-challenge/issues"
   },
-  "homepage": "https://github.com/tiagodread/cypress-challenge#readme"
+  "homepage": "https://github.com/tiagodread/cypress-challenge#readme",
+  "devDependencies": {
+    "cypress": "^9.3.1"
+  }
 }
