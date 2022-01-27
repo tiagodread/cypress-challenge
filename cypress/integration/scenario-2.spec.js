@@ -50,7 +50,7 @@ describe('Scenario 2', () => {
       cy.get('[type="primary"]').click({ timeout: 30000 })
       cy.wait('@beneficiaries', { timeout: 30000 }).then(xhr => {
         expect(xhr.response.statusCode).to.eq(401)
-        expect(xhr.response.body).to.eql({ "success": false, "error": { "code": "0204", "message": "PIN incorreto" } }
+        expect(xhr.response.body).to.eql({ "success": false, "error": { "code": "0204", "message": "Incorrect PIN" } }
         )
       })
     })
