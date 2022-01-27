@@ -7,10 +7,11 @@ This repository contains cypress tests and applies many approaches:
 
 - It uses github actions to run all tests
 - cypress dashboard is integrated
-- custom plugin to fetch auth device lin from email and authorize the device (if needed) 
+- custom plugin to fetch auth device link from email and authorize the device (if needed) 
 - uses ansible-vault to decrypt gmail api credentials
 - and more
 
+[Cypress dashboard link with test results](https://dashboard.cypress.io/projects/m9pwci/runs)
 
 ## Install
 
