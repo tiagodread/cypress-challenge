@@ -1,5 +1,8 @@
 {
     "baseUrl": "https://stage.bitso.com/",
     "viewportWidth": 1920,
-    "viewportHeight": 1080
+    "viewportHeight": 1080,
+    "projectId": "m9pwci",
+    "defaultCommandTimeout": 10000,
+    "videoCompression": false
 }
