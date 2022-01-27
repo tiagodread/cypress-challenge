@@ -84,7 +84,7 @@ Cypress.Commands.add('login', (email = undefined, password = undefined) => {
 	cy.intercept('POST', '/api/v3/login').as('login')
 	cy.get('[type="submit"]').click()
 	cy.wait('@login')
-	cy.get('[data-testid="modal-onBack"]', { timeout: 120000 }).should('exist')
+	cy.wait(Cypress.config('defaultCommandTimeout'))
 	// check if authorization is needed for the first time
 	cy.url().then((url) => {
 		if (url.includes('device_req')) {

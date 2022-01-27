@@ -43,8 +43,8 @@ describe('Scenario 1', () => {
         cy.get('[data-testid="picker-item"]').first().click()
       })
       cy.get('.modal-content').should('be.visible').within(() => {
-        cy.contains('Ops! Algo deu errado')
-        cy.contains('Essa transação excede seu limite. Aumente seu limite de conta para continuar.')
+        cy.contains('Oops! Something went wrong')
+        cy.contains('This transaction exceeds your limit. Increase your account limit to continue.')
         cy.get('[data-testid="modal-close"]').click()
       })
     })
